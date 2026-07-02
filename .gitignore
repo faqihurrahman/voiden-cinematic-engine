@@ -1,0 +1,63 @@
+# ============================================
+# Voiden Cinematic Engine — Public Repo Ignore
+# ============================================
+
+# Source code (kept in private repo)
+*.py
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Credentials & secrets
+client_secrets.json
+token.pickle
+*.pickle
+.env
+.env.*
+*.pem
+*.key
+
+# Data & runtime files
+data/
+logs/
+output/
+*.tmp
+*.temp
+*.log
+
+# Local configuration overrides
+config_local.py
+local_config.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Dependencies (if any)
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# Demo output (keep placeholder, ignore actual files)
+demo/*.mp4
+demo/*.mov
+demo/*.wav
+demo/*.mp3
+
+# Assets (keep placeholder, ignore large files)
+assets/*.png
+assets/*.jpg
+assets/*.jpeg
+assets/*.gif
+assets/*.svg
