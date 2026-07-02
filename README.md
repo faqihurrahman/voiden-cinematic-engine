@@ -141,12 +141,12 @@ voiden-cinematic-engine/
 
 ---
 
-## 🔒 Source Code
+## 🔒 Implementation
 
-The full implementation is maintained in a private repository.  
+Architecture and system design are documented here.  
+Implementation details can be discussed via **screen share** — feel free to reach out.
+
 For collaboration inquiries, please contact via GitHub issues or email.
-
----
 
 ## 📝 License
 
