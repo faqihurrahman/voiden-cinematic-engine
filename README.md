@@ -1,22 +1,33 @@
 # Voiden Cinematic Engine
 
-> **AI-Powered Cinematic Video Automation Pipeline**  
-> Transform raw gameplay footage into algorithmically edited cinematic shorts — fully automated, from peak detection to platform upload.
+> **Universal Cinematic Video Engine**  
+> Transform any raw footage — gameplay, travel, sports, music — into algorithmically edited cinematic shorts.  
+> Fully automated: from scene analysis to platform upload.
 
 ---
 
 ## 🎬 What It Does
 
-Voiden Cinematic Engine is a deterministic video editing pipeline that:
+Voiden Cinematic Engine is a **content-type agnostic** video editing pipeline that:
 
-1. **Analyzes** raw gameplay video + background music
+1. **Analyzes** raw footage + background music
 2. **Detects** audio peaks, transient impacts, and motion patterns
 3. **Ranks** thousands of candidate cut points using multi-factor scoring
 4. **Builds** a segment timeline with role-based sequencing (HOOK → BUILD → MOTION → IMPACT → RELEASE)
 5. **Renders** slow-motion, zoom, flash, shake, and subtitle overlays synced to the beat
 6. **Uploads** finished videos to YouTube and Facebook automatically
 
-All without manual timeline editing.
+### Content Types Supported
+
+| Content Type | Status | Description |
+|-------------|--------|-------------|
+| **Gaming** | ✅ Live | Slow-mo synced to impact moments, shake, flash |
+| **Travel Vlog** | 🔄 In Progress | Smooth transitions, scenic holds, mood pacing |
+| **Sports** | 📋 Planned | Peak action detection, dynamic zoom, crowd audio |
+| **Music Video** | 📋 Planned | Lyric-synced visuals, beat grid, visualizer overlay |
+| **Fashion/Lifestyle** | 📋 Planned | Elegant cuts, product focus, trend pacing |
+
+> **Note**: The engine architecture is fully content-agnostic. Gaming is the first vertical to validate the pipeline. Universal templates are in active development.
 
 ---
 
@@ -25,7 +36,7 @@ All without manual timeline editing.
 ```
 ┌─────────────────┐     ┌──────────────────┐     ┌─────────────────┐
 │  Raw Assets     │────▶│  Audio/Video     │────▶│  Impact & Peak  │
-│  (MP4 + MP3)    │     │  Extraction      │     │  Detection      │
+│  (Any Footage)  │     │  Extraction      │     │  Detection      │
 └─────────────────┘     └──────────────────┘     └─────────────────┘
                                                         │
                                                         ▼
@@ -74,20 +85,20 @@ All without manual timeline editing.
 
 ## 🛠️ Tech Stack
 
-| Layer | Technology |
-|-------|-----------|
-| Language | Python 3.11+ |
-| Video Processing | OpenCV + FFmpeg |
-| Audio Analysis | NumPy + FFT-based envelope detection |
-| Text Rendering | Pillow (multi-script: Latin, CJK, Hangul, Cyrillic) |
-| Upload APIs | YouTube Data API v3, Facebook Graph API |
-| Storage | JSON-based tracker (scene history, asset cycles, upload DB) |
+| Layer | Technology | Content-Agnostic? |
+|-------|-----------|-------------------|
+| Language | Python 3.11+ | ✅ |
+| Video Processing | OpenCV + FFmpeg | ✅ |
+| Audio Analysis | NumPy + FFT-based envelope detection | ✅ |
+| Text Rendering | Pillow (multi-script: Latin, CJK, Hangul, Cyrillic) | ✅ |
+| Upload APIs | YouTube Data API v3, Facebook Graph API | ✅ |
+| Storage | JSON-based tracker (scene history, asset cycles, upload DB) | ✅ |
 
 ---
 
 ## 🎥 Demo
 
-> **[▶ Watch Demo](https://youtube.com/your-demo-link)** *(placeholder — update after recording)*
+> **[▶ Watch Demo](https://youtube.com/your-demo-link)** *(update with your actual demo link)*
 
 The demo shows:
 1. Terminal output: peak detection scores, candidate ranking, timeline build
@@ -114,6 +125,19 @@ voiden-cinematic-engine/
 ```
 
 > **Note**: Source code is kept private. This public repo contains architecture documentation only.
+
+---
+
+## 🚧 Current Status & Roadmap
+
+| Milestone | Status | Target |
+|-----------|--------|--------|
+| Gaming template (proof-of-concept) | ✅ Complete | Q2 2026 |
+| Travel vlog template | 🔄 In Progress | Q3 2026 |
+| Sports template | 📋 Planned | Q4 2026 |
+| Music video template | 📋 Planned | Q4 2026 |
+| Fashion/lifestyle template | 📋 Planned | Q1 2027 |
+| Web dashboard for template selection | 📋 Planned | Q1 2027 |
 
 ---
 
