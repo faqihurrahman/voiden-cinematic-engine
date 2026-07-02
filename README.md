@@ -98,7 +98,7 @@ Voiden Cinematic Engine is a **content-type agnostic** video editing pipeline th
 
 ## 🎥 Demo
 
-> **[▶ Watch Demo](https://youtube.com/your-demo-link)** *(update with your actual demo link)*
+> **[▶ Watch Demo](https://drive.google.com/file/d/13Dy9U5q8wHzKcFqGW17jvfr5aygP3zeW/view?usp=drive_link)**
 
 The demo shows:
 1. Terminal output: peak detection scores, candidate ranking, timeline build
